@@ -6,46 +6,48 @@ body{
 }
 form{
     margin: auto;
-    background-color: rgb(245, 174, 174);
+    background-color: rgb(151, 194, 214);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 20px;
     max-width: 600px;
 }
-h1{
+#header{
     text-align: center;
-    color: black;
+    background: rgb(0, 23, 128);
+    color: rgb(220, 236, 255);
+    font-family:sans-serif;
 }
 fieldset{
-    border: 2px solid rgb(240, 63, 63);
+    border: 2px solid rgb(28, 0, 128);
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: rgb(255, 220, 220);
+    background-color: rgb(220, 236, 255);
 }
 legend {
     font-weight: bold;
     text-align: center;
-    color: rgb(34, 29, 29);
+    color:rgb(28, 0, 128) ;
 }
 label{
     display: block;
     margin-top: 10px;
-    color: black;
+    color: rgb(28, 0, 128) ;
 }
 input,textarea{
     margin-top: 4px;
     padding:8px;
     box-sizing:border-box;
     width: 550px;
-    border: 1px solid rgb(240, 63, 63);
+    border: 1px solid rgb(36, 54, 214);
     border-radius: 4px;
 }
 button{
     display: block;
     width: 100%;
-    color: rgb(250, 250, 250);
-    background-color: rgb(128, 0, 0);
+    color: rgb(221, 234, 250);
+    background-color: rgb(0, 23, 128) ;
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -56,19 +58,36 @@ button{
     cursor: pointer;
 }
 button:hover{
-    color: rgb(221, 160, 160);
+    color: rgb(160, 209, 221);
 }
 #resume-display {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    border: 2px solid rgb(240, 63, 63);
+    border: 2px solid rgb(28, 47, 218);
     border-radius: 8px;
-    background-color:rgb(255, 220, 220) ;
+    background-color:rgb(174, 223, 245) ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    /* Making the resume Editable */
-    outline: none;
 }
 #resume-display h2{
-    color: black;
+    color: rgb(221, 234, 250) ;
+}
+#resume-display h3{
+    color: rgb(0, 23 , 128) ;
+}
+.profilePicture{
+    display: block;
+    margin : 0 auto;
+    border: 3px solid rgb(0, 23 , 128);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+#resume-display, .f1{
+    background-color:rgb(0, 23 , 128) ;
+}
+p{
+    color: rgb(0, 23 , 128);
 }

@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Editable Dynamic Resume Builder</h1>
+
+    <div id="header">
+    <h1>Editable Dynamic Resume Builder by Jaweria Mustafa</h1>
+    <p style="font-family:'Courier New', Courier, monospace; color: rgb(220, 236, 255);">Generate + Edit your resume using my Dynamic Resume Builder</p>
+    </div>
     <form id="resume-form">
+        <fieldset>
+        <legend>Profile Section</legend>
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" accept="image/*" required>
+
+            <label for="objective">Objective:</label>
+            <textarea id="objective" rows="4" placeholder="Enter your Objective:" required></textarea>
+
+            <label for="certification">Certifications:</label>
+            <textarea id="certification" rows="4" placeholder="Enter your certifications:"></textarea>
+        </fieldset>
+
         <fieldset>
             <legend>
             Personal Information
             </legend>
+
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Enter your Name:" required>
 
@@ -44,7 +61,7 @@
 
         <button type="submit"><b>Generate Resume</b></button>
         <br>
-        <!-- Dynamic and Editable Resume -->
+        <!--Editable Dynamic Resume -->
          <div id="resume-display" contenteditable="true">
             <!-- Resume will be generated below -->
 
