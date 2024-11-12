@@ -91,3 +91,50 @@ button:hover{
 p{
     color: rgb(0, 23 , 128);
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    form, #resume-display {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .profilePicture {
+        max-width: 150px;
+        width:100%;
+        height:auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    form, #resume-display {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    legend {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .profilePicture {
+        max-width: 150px;
+        width:100%;
+        height:auto;
+    }
+}
