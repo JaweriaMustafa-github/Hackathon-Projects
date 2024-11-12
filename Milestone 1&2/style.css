@@ -1,64 +1,77 @@
-/*General Styling*/
+/* General Styling */
 body {
-    font-family:Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 150px;
+    padding: 20px; /* Reduced padding for better mobile fit */
 }
+
 .resume-container {
     display: flex;
     background-color: white;
-    width:80%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Allow items to wrap */
+    padding: 20px;
 }
-/*Left Section Styling*/
+
+/* Left Section Styling */
 .left-section {
     background: #0e1650;
-    color:white;
+    color: white;
     padding: 20px;
-    width : 35%;
+    width: 35%;
     text-align: center;
     border-right: 5px solid #2b8af7;
+    box-sizing: border-box;
 }
+
 .profile-picture {
     width: 150px;
-    height:150px;
+    height: 150px;
     margin-top: 10%;
     border-radius: 50%;
     border: 5px solid #2b8af7;
 }
+
 h1 {
     font-size: 24px;
     margin: 10px 0;
     margin-bottom: 30px;
     text-align: center;
 }
+
 h3 {
     font-size: 18px;
     padding: 2%;
     margin: 20px 0 10px;
-    color:black;
+    color: black;
     border-radius: 10px;
     box-shadow: 0 0 15px #2b8af7;
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
 ul {
     list-style-type: fill round;
     padding: 10;
     margin: 10px 0;
 }
+
 ul li {
     margin: 5px 0;
 }
-/*Right Section Styling*/
+
+/* Right Section Styling */
 .right-section {
     padding: 20px;
     width: 65%;
+    box-sizing: border-box;
 }
-button{
+
+button {
     font-family: Arial, sans-serif;
     border-radius: 10px;
     box-shadow: 0 0 15px #2b8af7;
@@ -66,6 +79,72 @@ button{
     margin-top: 10px;
     font-size: 18px;
 }
+
 button:hover {
     background-color: #9ab3f7;
+}
+
+/* Responsive Styles */
+
+/* For screens less than or equal to 768px (large mobile screens) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .resume-container {
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* For screens less than or equal to 480px (small mobile screens) */
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .resume-container {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 80px; /* Smaller profile picture for small screens */
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 18px; /* Smaller heading font for mobile */
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
 }
